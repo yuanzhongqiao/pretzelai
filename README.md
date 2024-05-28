@@ -1,136 +1,131 @@
-# [Pretzel](https://withpretzel.com)
-
-Pretzel is a fork of Jupyter with the goal to improve Jupyter's capabilities. As one of our first releases, we've added AI code generation, editing and error fixing to Jupyter.
-
-**TL;DR**
-
-- Install Pretzel: `pip install pretzelai` then run `pretzel lab` to open the web interface
-- In any Jupyter cell, click “**Ask AI**” or press Cmd+K (Mac) / Ctrl+K (Linux/Windows) to prompt AI
-- Try our free hosted version: https://pretzelai.app
-
-Switching to Pretzel from Jupyter is extremely easy. We use your existing Jupyter extensions, settings and keybindings.
-
-Our roadmap includes building features such as:
-
-- Native AI features similar to [Cursor](https://cursor.sh/)
-- Frictionless realtime collaboration: pair-programming, comments, version history, etc.
-- SQL support (both in code cells and as a standalone SQL IDE)
-- Visual analysis builder (see more here)
-- VSCode like code-writing experience using [Monaco](https://github.com/microsoft/monaco-editor)
-- 1-click dashboard creation from data analysis results
-- End-to-end analysis on datasets for non-data folks
-
-## Installation
-
-Just as with Jupyter, you can install Pretzel by using pip:
-
-```
-pip install pretzelai
-```
-
-If using conda, first install pip with `conda install pip` followed by `pip install pretzelai`.
-
-Then, start Pretzel with:
-
-```
-pretzel lab
-```
-
-Just as with Jupyter, you should see a URL to access the Pretzel interface.
-
-**Bleeding Edge Version**
-
-Bugs possible. To use the latest version of Pretzel:
-
-- Make sure Node.js is installed and is version 20
-- Clone and install the package
-
-```
-git clone https://github.com/pretzelai/pretzelai.git
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><a href="https://withpretzel.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">椒盐卷饼</font></font></a></h1><a id="user-content-pretzel" class="anchor" aria-label="固定链接：椒盐卷饼" href="#pretzel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pretzel 是 Jupyter 的一个分支，旨在改进 Jupyter 的功能。作为我们的首批发布版本之一，我们为 Jupyter 添加了 AI 代码生成、编辑和错误修复功能。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总结</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 Pretzel：</font></font><code>pip install pretzelai</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后运行</font></font><code>pretzel lab</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开 Web 界面</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在任何 Jupyter 单元中，单击“</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">询问 AI</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ”或按 Cmd+K (Mac) / Ctrl+K (Linux/Windows) 提示 AI</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尝试我们的免费托管版本：</font></font><a href="https://pretzelai.app" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://pretzelai.app</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从 Jupyter 切换到 Pretzel 非常简单。我们使用您现有的 Jupyter 扩展、设置和键绑定。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的路线图包括构建以下功能：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><a href="https://cursor.sh/" rel="nofollow"><font style="vertical-align: inherit;">与Cursor</font></a><font style="vertical-align: inherit;">类似的原生 AI 功能</font></font><a href="https://cursor.sh/" rel="nofollow"><font style="vertical-align: inherit;"></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无摩擦实时协作：结对编程、评论、版本历史等。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SQL 支持（在代码单元中以及作为独立的 SQL IDE）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可视化分析构建器（更多内容请见此处）</font></font></li>
+<li><font style="vertical-align: inherit;"><a href="https://github.com/microsoft/monaco-editor"><font style="vertical-align: inherit;">使用Monaco</font></a><font style="vertical-align: inherit;">获得类似 VSCode 的代码编写体验</font></font><a href="https://github.com/microsoft/monaco-editor"><font style="vertical-align: inherit;"></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据数据分析结果一键创建仪表板</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为非数据人员提供端到端的数据集分析</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor" aria-label="固定链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与 Jupyter 一样，你可以使用 pip 安装 Pretzel：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>pip install pretzelai
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install pretzelai" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果使用 conda，首先安装 pip，</font></font><code>conda install pip</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后安装</font></font><code>pip install pretzelai</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后，使用以下命令启动 Pretzel：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>pretzel lab
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pretzel lab" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与 Jupyter 一样，您应该会看到一个用于访问 Pretzel 界面的 URL。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尖端版本</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可能存在错误。要使用最新版本的 Pretzel：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保已安装 Node.js 并且版本为 20</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克隆并安装包</font></font></li>
+</ul>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>git clone https://github.com/pretzelai/pretzelai.git
 cd pretzelai
 pip install .
-```
-
-## Configuration
-
-Pretzel comes with out-of-the-box support for a free AI server. You should be able to start using it with no configuration needed.
-
-**OpenAI Support**
-You can configure Pretzel to use your own OpenAI API key. To do so:
-
-- Open the `Settings` menu in the top menubar
-- Go down to `Settings Editor`, open it and search for `Pretzel` in the search box. Select `Pretzel AI Settings` on the left bar.
-- From the `AI Service` dropdown, select `OpenAI API Key` and fill out your API key under `OpenAI Settings > API Key`
-- If your company uses OpenAI Enterprise, then you can also enter the base URL for OpenAI call under `OpenAI Settings`
-
-**Azure Support**
-Just as with OpenAI settings, you can also use Azure hosted models if you select `Use Azure API` in the `AI Service` dropdown. _We haven't tested this so there may be bugs._
-
-## Usage
-
-**Adding code to an empty cell**
-
-- When in a cell, press `Cmd+K` (Mac) / `Ctrl+K` (Windows/Linux) to open AI prompting textbox and write your prompt
-  - You can use `@variable` syntax to refer to variables and dataframes in memory. Press "Enter" to submit
-- You can accept/reject the response or edit your prompt if you want to re-submit with modifications
-
-**Adding code in the middle of existing code**
-
-- Put your cursor either on an empty line or an existing line of code. Bring up the AI prompting text box with Cmd+K
-- Start your prompt with the word `inject` or `ij` (case-insensitive) - this tells the AI to only add new code and not edit the existing code in the cell
-- Code will be added one line below where your cursor was placed
-
-**Support for editing code**
-
-- If there's existing code in a cell, you can prompt the AI to edit the code
-- If you select/highlight some code in a cell, only the selected code will be edited
-
-**Fix errors with AI**
-
-- When there's an error, you'll see a button on top-right "**Fix Error with AI**". Click it
-- The AI will try to resolve the error even if it is in a different cell by adding the appropriate code
-
-## Feedback, bugs and docs
-
-- Please report bugs here: https://github.com/pretzelai/pretzelai/issues
-- Have any feedback? Any complains? We'd love feedback: founders@withpretzel.com
-- Additional documentation will become available on our website by end of May!
-
-## Jupyter specific information
-
-The original Jupyter documentation is available [here](https://jupyter.org/) and
-the Jupyterlab README is available [here](https://github.com/jupyterlab/jupyterlab).
-
-## FAQ
-
-**Q.** _What happened to the old version of Pretzel AI - the visual, in-browser data manipulation tool?_
-
-**A.** It's available in the [`pretzelai_visual` folder here](https://github.com/pretzelai/pretzelai/tree/main/pretzelai_visual). Please see [this PR](https://github.com/pretzelai/pretzelai/pull/76) for more info.
-
-**Q.** _What AI model does Pretzel use?_
-
-**A.** We currently use GPT-4o by default and it's been good so far. We also allow you to switch models in Pretzel Settings if you're using your own API key. We will keep experimenting with the model, prompts and parameters to keep improving the code-gen experience.
-
-**Q.** _What about feature X?_
-
-**A.** There's a ton we want to build. Please [open an issue](https://github.com/pretzelai/pretzelai/issues) and tell us what you want us to build!
-
-**Q.** _Where's the roadmap?_
-
-**A.** There's so many features we'd like to build! But, there's just two of us and so, we're collecting feedback about what would be most helpful. As a result, we don't have a concrete roadmap just yet. We'd love your help with this! Please open an issue or just send us an email with your feedback!
-
-**Q.** _What's the deal with the license?_
-
-**A.** Our goal with building Pretzel is to make an amazing data tool that is free for both individuals and companies to use. That said, we are a two person startup - and we don't want some third party to just take our code and sell a hosted version of it without giving back to the community. Jupyter code is licensed as BSD-3 and if we keep our new code BSD-3 licensed, there would be no way to stop third-party from doing this. As a result, we went with the AGPLv3 license for all the new code. This ensures that if someone else does want to take our code and sell it (SaaS or otherwise), they have to open-source all of their modifications under AGPLv3 as well.
-
-**Q.** _Why a fork of Jupyter? Why not contribute into Jupyter directly?_
-
-**A.** This deserves a longer answer but here's the short answer: We've set out to make the **new** de-facto, modern, open-source data tool. Initially, we wanted to start from scratch. However, after talking to several data professionals, we realized it will be very hard to get people to switch to a new tool, no matter how good. The best way to get people to switch is to not have them switch at all. That's why we decided to fork Jupyter - for the near zero switching costs. Also, Jupyter is a mature product and we're shipping feature really fast - frankly, at the pace we're shipping features, the code we write won't be accepted into the Jupyter codebase 😅. There are also many downsides to this decision - we've had to spend considerable time understanding the whole Jupyter ecosystem and multiple codebases, the complex release processes, the various APIs etc. However, we think this is the right decision for us.
-
-**Q.** _My company is worried about using an AGPLv3 licensed tool. What can I do?_
-
-**A.** The AGPL is a barrier ONLY IF you're modifying Pretzel AND redistributing it to the public. If you're simply using it as a tool in your company (even with modifications), the AGPL DOES NOT ask you to share your code. Still, if AGPL is an issue for you, please contact us, and we can figure out something that works.
-
-**Q.** _I'm worried about a "rug-pull" - that you will re-license the code to be under a paid license in the future? OR, how are you planning on making money?_
-
-**A.** We're planning on selling a hosted version of the tool to companies to make money. This hosted version will probably have some company specific features that individuals don't want or need such as data access controls, connectors for data sources, integration with GitHub, hosted and shareable dashboard, scalable compute for large jobs etc. We will not retroactively make Pretzel's individual version paid.
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/pretzelai/pretzelai.git
+cd pretzelai
+pip install ." tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></h2><a id="user-content-configuration" class="anchor" aria-label="固定链接：配置" href="#configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pretzel 提供对免费 AI 服务器的开箱即用支持。您无需任何配置即可开始使用它。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenAI 支持</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+您可以配置 Pretzel 以使用您自己的 OpenAI API 密钥。具体操作如下：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开</font></font><code>Settings</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">顶部菜单栏中的菜单</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进入，打开并</font><font style="vertical-align: inherit;">在搜索框中</font></font><code>Settings Editor</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索。选择</font><font style="vertical-align: inherit;">左侧栏上的。</font></font><code>Pretzel</code><font style="vertical-align: inherit;"></font><code>Pretzel AI Settings</code><font style="vertical-align: inherit;"></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从</font></font><code>AI Service</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下拉菜单中选择</font></font><code>OpenAI API Key</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并填写您的 API 密钥</font></font><code>OpenAI Settings &gt; API Key</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的公司使用 OpenAI Enterprise，那么您也可以在下方输入 OpenAI 调用的基本 URL</font></font><code>OpenAI Settings</code></li>
+</ul>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Azure 支持</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+与 OpenAI 设置一样，您也可以在下拉菜单</font></font><code>Use Azure API</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中选择使用 Azure 托管模型</font></font><code>AI Service</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们尚未对此进行测试，因此可能存在错误。</font></font></em></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></h2><a id="user-content-usage" class="anchor" aria-label="固定链接：用法" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向空单元格添加代码</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在单元格中，按</font></font><code>Cmd+K</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Mac) / </font></font><code>Ctrl+K</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Windows/Linux) 打开 AI 提示文本框并输入提示
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用</font></font><code>@variable</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法来引用内存中的变量和数据框。按“Enter”提交</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以接受/拒绝回复，或者如果您想修改后重新提交，可以编辑提示</font></font></li>
+</ul>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在现有代码中添加代码</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将光标放在空行或现有代码行上。使用 Cmd+K 调出 AI 提示文本框</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以单词</font></font><code>inject</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>ij</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（不区分大小写）开头提示 - 这告诉 AI 仅添加新代码，而不是编辑单元格中的现有代码</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码将添加到光标所在位置下方一行</font></font></li>
+</ul>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持编辑代码</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果单元格中已有代码，你可以提示 AI 编辑该代码</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您选择/突出显示单元格中的某些代码，则只会编辑选定的代码</font></font></li>
+</ul>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 AI 修复错误</font></font></strong></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">出现错误时，您会在右上角看到一个按钮“</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 AI 修复错误</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">”。点击它</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">即使错误发生在不同的单元格中，AI 也会尝试通过添加适当的代码来解决该错误</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反馈、错误和文档</font></font></h2><a id="user-content-feedback-bugs-and-docs" class="anchor" aria-label="永久链接：反馈、错误和文档" href="#feedback-bugs-and-docs"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请在此处报告错误：</font></font><a href="https://github.com/pretzelai/pretzelai/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https：//github.com/pretzelai/pretzelai/issues</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有任何反馈吗？有任何投诉吗？我们欢迎您提供反馈：</font></font><a href="mailto:founders@withpretzel.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">founders@withpretzel.com</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更多文档将于五月底在我们的网站上发布！</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jupyter 具体信息</font></font></h2><a id="user-content-jupyter-specific-information" class="anchor" aria-label="永久链接：Jupyter 特定信息" href="#jupyter-specific-information"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">原始 Jupyter 文档可</font></font><a href="https://jupyter.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获得，Jupyterlab README 可</font></font><a href="https://github.com/jupyterlab/jupyterlab"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获得。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常问问题</font></font></h2><a id="user-content-faq" class="anchor" aria-label="永久链接：常见问题解答" href="#faq"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pretzel AI（浏览器内可视化数据处理工具）的旧版本怎么样了？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它位于</font></font><a href="https://github.com/pretzelai/pretzelai/tree/main/pretzelai_visual"><code>pretzelai_visual</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处的文件夹</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中。请参阅</font></font><a href="https://github.com/pretzelai/pretzelai/pull/76" data-hovercard-type="pull_request" data-hovercard-url="/pretzelai/pretzelai/pull/76/hovercard"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此 PR</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取更多信息。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pretzel 使用什么 AI 模型？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们目前默认使用 GPT-4o，到目前为止效果很好。如果您使用自己的 API 密钥，我们还允许您在 Pretzel 设置中切换模型。我们将继续试验模型、提示和参数，以不断改善代码生成体验。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">功能 X 怎么样？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们想构建的东西有很多。请</font></font><a href="https://github.com/pretzelai/pretzelai/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打开一个问题</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并告诉我们您希望我们构建什么！</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路线图在哪里？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们想要构建的功能太多了！但是我们只有两个人，所以我们正在收集关于哪些功能最有帮助的反馈。因此，我们目前还没有具体的路线图。我们非常希望您能在这方面提供帮助！请打开问题或发送电子邮件告诉我们您的反馈！</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可证是怎么回事？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们开发 Pretzel 的目标是打造一款出色的数据工具，供个人和公司免费使用。话虽如此，我们是一家两人创业公司，我们不希望第三方只拿走我们的代码并出售托管版本而不回馈社区。Jupyter 代码的许可为 BSD-3，如果我们将新代码保留为 BSD-3 许可，就无法阻止第三方这样做。因此，我们对所有新代码都采用了 AGPLv3 许可证。这确保如果其他人确实想拿走我们的代码并将其出售（SaaS 或其他方式），他们也必须根据 AGPLv3 开源他们的所有修改。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么要分叉 Jupyter？为什么不直接为 Jupyter 做贡献？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这个问题值得一个更长的答案，但简短来说就是：我们已着手制作</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">事实上的、现代的、开源数据工具。最初，我们想从头开始。然而，在与几位数据专家交谈后，我们意识到，无论新工具有多好，让人们改用新工具都非常困难。让人们改用新工具的最好方法是根本不要让他们改用。这就是我们决定分叉 Jupyter 的原因——几乎不需要任何切换成本。此外，Jupyter 是一款成熟的产品，我们发布功能的速度非常快——坦率地说，按照我们发布功能的速度，我们编写的代码不会被 Jupyter 代码库接受😅。这个决定也有很多缺点——我们不得不花费大量时间来了解整个 Jupyter 生态系统和多个代码库、复杂的发布流程、各种 API 等。但是，我们认为这是对我们来说正确的决定。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我的公司对使用 AGPLv3 许可工具感到担心。我该怎么办？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只有当您修改 Pretzel 并将其重新发布给公众时，AGPL 才会成为障碍。如果您只是在公司中将其用作工具（即使经过修改），AGPL 不会要求您共享代码。不过，如果 AGPL 对您来说是个问题，请联系我们，我们可以想出一些可行的方法。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问：</font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我担心“rug-pull”——你们将来会重新授权代码，使其符合付费许可吗？或者，你们打算如何赚钱？</font></font></em></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">答：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们计划向公司出售该工具的托管版本以赚钱。此托管版本可能具有一些个人不想要或不需要的公司特定功能，例如数据访问控制、数据源连接器、与 GitHub 集成、托管和可共享的仪表板、用于大型作业的可扩展计算等。我们不会追溯让 Pretzel 的个人版本付费。</font></font></p>
+</article></div>
